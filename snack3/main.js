@@ -6,10 +6,14 @@
 const names = ['Alberto', 'Fabio', 'Cristian', 'Marco', 'Giuseppe', 'Filippo'];
 const lastNames = ['Rossi', 'Bianchi', 'Sorrentino', 'De Luca', 'Galvani', 'Mancini'];
 
+const fakeList = [];
+
 for (let i = 0; i < 3; i++) {
     const x = Math.floor(Math.random() * names.length);
     const y = Math.floor(Math.random() * lastNames.length);
 
     const randomName = `${names[x]} ${lastNames[y]}`;
-    console.log(randomName);
+    fakeList.push(randomName);
 }
+
+console.log(fakeList);
