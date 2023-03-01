@@ -20,8 +20,9 @@ let sumWhile = 0;
 while (index < 5) {
     const numberWhile = Number(prompt('Inserisci un numero'));
 
-    sumWhile+= numberWhile;
-    console.log(sumWhile);
-
-    index++;
+    if (!isNaN(numberWhile)) {
+        sumWhile+= numberWhile;
+        console.log(sumWhile);
+        index++;
+    }
 }
